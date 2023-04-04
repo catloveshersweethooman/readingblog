@@ -1,0 +1,60 @@
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="{{ site.url }}/">主页<br>/HOME/</a></li>
+		<li>
+			<a href="#">关于<br>/ABOUT/</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo">
+					<h4>{{ site.owner.name }}</h4>
+					<p>{{ site.owner.bio }}</p>
+				</li>
+				<li><a href="https://pushoong.com/zh-hans/ask/7494901910"><span class="btn btn-inverse">/ASK/欺人太甚周敦儒</span></a></li>
+				<li><a href="https://badtabbywhitecat.github.io/"><img height="14" width="14" src="https://badtabbywhitecat.github.io/yelouarchive//images/blog.png" /> /BLOG/欺人太甚周敦儒</span></a></li>
+				{% if site.owner.AO3 %}<li>
+					<a href="https://archiveofourown.org/users/{{ site.owner.AO3 }}"><img height="14" width="14" src="https://badtabbywhitecat.github.io/yelouarchive//images/AO3.png" /> /AO3/欺人太甚周敦儒</a>
+				</li>{% endif %}
+				{% if site.owner.facebook %}<li>
+					<a href="https://facebook.com/{{ site.owner.facebook }}"><i class="fa fa-fw fa-facebook"></i> Facebook</a>
+				</li>{% endif %}
+				{% if site.owner.google_plus %}<li>
+					<a href="https://google.com/{{ site.owner.google_plus }}"><i class="fa fa-fw fa-google-plus"></i> Google+</a>
+				</li>{% endif %}
+				{% if site.owner.linkedin %}<li>
+					<a href="https://linkedin.com/in/{{ site.owner.linkedin }}"><i class="fa fa-fw fa-linkedin"></i> LinkedIn</a>
+				</li>{% endif %}
+				{% if site.owner.github %}<li>
+					<a href="https://github.com/{{ site.owner.github }}"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				</li>{% endif %}
+				{% if site.owner.stackexchange %}<li>
+					<a href="{{ site.owner.stackexchange }}"><i class="fa fa-fw fa-stack-exchange"></i> Stackexchange</a>
+				</li>{% endif %}
+				{% if site.owner.instagram %}<li>
+					<a href="https://instagram.com/{{ site.owner.instagram }}"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
+				</li>{% endif %}
+				{% if site.owner.flickr %}<li>
+					<a href="https://www.flickr.com/photos/{{ site.owner.flickr }}"><i class="fa fa-fw fa-flickr"></i> Flickr</a>
+				</li>{% endif %}
+				{% if site.owner.tumblr %}<li>
+					<a href="http://{{ site.owner.tumblr }}.tumblr.com"><i class="fa fa-fw fa-tumblr"></i> Tumblr</a>
+				</li>{% endif %}
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">文章&标签<br>/POSTS&TAGS/</a>
+			<ul class="dl-submenu">
+				<li><a href="{{ site.url }}/posts/">所有文章<br>/ALL POSTS/</a></li>
+				<li><a href="{{ site.url }}/tags/">所有标签<br>/ALL TAGS/</a></li>
+			</ul>
+		</li>
+		{% for link in site.data.navigation %}
+	    {% if link.url contains 'http' %}
+	        {% assign domain = '' %}
+	        {% else %}
+	        {% assign domain = site.url %}
+	    {% endif %}
+	    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+	  {% endfor %}
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->

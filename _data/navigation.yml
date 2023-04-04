@@ -1,0 +1,10 @@
+# Menu navigation links
+
+#- title: Theme Setup
+#  url: /theme-setup/
+
+#- title: External Link
+#  url: http://mademistakes.com
+
+-title: 留言
+url: https://github.com/catloveshersweethooman/talk/issues

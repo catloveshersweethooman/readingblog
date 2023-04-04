@@ -5,7 +5,7 @@ reading_time:     true
 excerpt_separator:  '<!-- more -->'
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url: https://catloveshersweethooman.github.io/readingblog
+url: https://catloveshersweethooman.github.io/readingblog/
 
 # Owner/author information
 owner:

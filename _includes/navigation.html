@@ -12,6 +12,9 @@
 				</li>
 				<li><a href="https://pushoong.com/zh-hans/ask/7494901910"><span class="btn btn-inverse">/ASK/欺人太甚周敦儒</span></a></li>
 				<li><a href="https://badtabbywhitecat.github.io/"><img height="14" width="14" src="https://badtabbywhitecat.github.io/yelouarchive//images/blog.png" /> /BLOG/欺人太甚周敦儒</span></a></li>
+		{% if site.owner.email %}<li>	
+					<a href="mailto:{{ site.owner.email }}"><i class="fa fa-fw fa-envelope"></i>EMAIL</a>	
+				</li>{% endif %}
 				{% if site.owner.AO3 %}<li>
 					<a href="https://archiveofourown.org/users/{{ site.owner.AO3 }}"><img height="14" width="14" src="https://badtabbywhitecat.github.io/yelouarchive//images/AO3.png" /> /AO3/欺人太甚周敦儒</a>
 				</li>{% endif %}

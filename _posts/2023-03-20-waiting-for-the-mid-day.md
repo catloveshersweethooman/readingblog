@@ -10,6 +10,7 @@ image:
   creditlink: https://fairy.id/web/@zdrthevulgarnykot
 ---
 等待日中
+
 Waiting for the mid-day
 
 <!--more-->

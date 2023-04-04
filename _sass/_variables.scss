@@ -1,0 +1,56 @@
+/* ==========================================================================
+   SCSS Variables
+   ========================================================================== */
+
+/* 
+   Page
+   ========================================================================== */
+
+$feature-image-height            : 400px; // min 150px recommended
+$front-page-feature-image-height : 400px; // min 150px recommended
+
+/* 
+   Typography
+   ========================================================================== */
+
+$base-font                       :'汉仪江南楷宋','汉仪江南楷宋 W','FZYingBiKaiShu','FZYingBiKaiShu-S15S','方正硬笔楷书简体','LXGWWenKaiScreen','霞鹜文楷 屏幕阅读版','霞鹜文楷','Lato', '方正标雅宋简体','宋体',Calibri, Arial, sans-serif;
+$heading-font                    : 'Lato', 'FZXBSJW','FZXiaoBiaoSong-B05S','方正小标宋简体','宋体',Calibri, Arial, sans-serif;
+$caption-font                    : 'Lato', 'FZXBSJW','FZXiaoBiaoSong-B05S','方正小标宋简体','宋体',Calibri, Arial, sans-serif;
+$code-font                       : '方正硬笔楷书简体','字酷堂黄楷体','字酷堂黄自元楷体','字酷堂黄楷体(个人非商业版)','ZiKuTangHuangKaiTi','ZiKuTangHuangKaiTi-1','LXGW WenKai Screen','LXGWWenKaiScreen','霞鹜文楷 屏幕阅读版',monospace;
+$alt-font                        : serif;
+
+$doc-font-size                   : 16;
+$doc-line-height                 : 26;
+
+
+// set-up the body font-size / line-height
+body {
+  margin-top: 0px + $doc-line-height;
+  font-size: 0px + $doc-font-size;
+}
+
+/* 
+   Colors
+   ========================================================================== */
+
+$base-color                      : rgba(#222,0.8);
+$body-color                      : #e8e8e8;
+$text-color                      : rgba(#222,0.8);
+$comp-color                      : complement(#222);
+$border-color                    : lighten($base-color,60);
+$link-color                      : rgba(#222,0.8);
+
+$primary                         : #222;
+$success                         : #5cb85c;
+$warning                         : #dd8338;
+$danger                          : #C64537;
+$info                            : #308cbc;
+
+
+/* 
+   Screen sizes
+   ========================================================================== */
+
+$small                           : "only screen and (min-width: 30em)";
+$medium                          : "only screen and (min-width: 48em)";
+$large                           : "only screen and (min-width: 62.5em)";

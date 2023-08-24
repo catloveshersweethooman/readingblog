@@ -7,6 +7,6 @@ image:
   background: yellowpaper.png
 ---
 
-<p align="center"><img src="https://catloveshersweethooman.github.io/readingblog/images/20230819.jpg" width="100%"></p>
+<p align="center"><img src="https://catloveshersweethooman.github.io/readingblog/images/20230819.jpg" width="75%"></p>
 
 

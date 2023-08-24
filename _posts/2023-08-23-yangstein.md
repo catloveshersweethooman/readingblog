@@ -10,5 +10,6 @@ image:
   creditlink: https://fairy.id/web/@zdrthevulgarnykot
 ---
 
+<!--more-->
 
-<p align="center"><img src="https://badtabbywhitecat.github.io/yelouarchive//images/2023082302.jpg" width="100%"></p>
+<p align="center"><img src="https://catloveshersweethooman.github.io/readingblog/images/2023082302.jpg" width="100%"></p>
